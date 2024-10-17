@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Rompecabezas con Imágenes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1 id="title">
+            <span class="letter">J</span><span class="letter">u</span><span class="letter">e</span><span class="letter">g</span><span class="letter">o</span>
+            <span class="letter">d</span><span class="letter">e</span>
+            <span class="letter">R</span><span class="letter">o</span><span class="letter">m</span><span class="letter">p</span><span class="letter">e</span><span class="letter">c</span><span class="letter">a</span><span class="letter">b</span><span class="letter">e</span><span class="letter">z</span><span class="letter">a</span><span class="letter">s</span>
+        </h1>
+
+        <div class="puzzle-selector">
+            <button onclick="selectPuzzle(1)">Rompecabezas 1</button>
+            <button onclick="selectPuzzle(2)">Rompecabezas 2</button>
+            <button onclick="selectPuzzle(3)">Rompecabezas 3</button>
+        </div>
+
+        <div id="puzzle-container"></div>
+
+        <!-- Botón de Encuesta añadido -->
+        <div class="button-container">
+            <button id="survey-btn">Encuesta</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
