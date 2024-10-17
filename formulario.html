@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Opinión - Juego de Rompecabezas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://image.ondacero.es/clipping/cmsimages01/2020/12/31/3C32D9C5-2CDE-416F-AE2C-07AB2A89CCDD/69.jpg?crop=1067,600,x95,y0&width=1280&height=720&optimize=low&format=webply'); /* URL de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px;
+        }
+        form {
+            background-color: rgba(5, 220, 253, 0.9); /* Fondo semitransparente para destacar el formulario */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #000000;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #20f62e;
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        input[type="submit"]:hover {
+            background-color: #029007;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Encuesta sobre el Juego de Rompecabezas en Línea</h1>
+
+<form action="https://formspree.io/f/{your-form-id}" method="POST">
+    <label for="name">1. Nombre completo:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">2. Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="age">3. Edad:</label>
+    <input type="number" id="age" name="age" min="10" max="99" required>
+
+    <label for="frequency">4. ¿Con qué frecuencia juegas juegos de rompecabezas en línea?</label>
+    <select id="frequency" name="frequency">
+        <option value="Diariamente">Diariamente</option>
+        <option value="Semanalmente">Semanalmente</option>
+        <option value="Mensualmente">Mensualmente</option>
+        <option value="Raramente">Raramente</option>
+    </select>
+
+    <label for="favorite">5. ¿Cuál es tu rompecabezas en línea favorito?</label>
+    <input type="text" id="favorite" name="favorite">
+
+    <label for="difficulty">6. ¿Cómo calificas la dificultad de los rompecabezas en general?</label>
+    <select id="difficulty" name="difficulty">
+        <option value="Muy fácil">Muy fácil</option>
+        <option value="Fácil">Fácil</option>
+        <option value="Moderada">Moderada</option>
+        <option value="Difícil">Difícil</option>
+        <option value="Muy difícil">Muy difícil</option>
+    </select>
+
+    <label for="platform">7. ¿En qué plataforma prefieres jugar?</label>
+    <select id="platform" name="platform">
+        <option value="PC">PC</option>
+        <option value="Teléfono móvil">Teléfono móvil</option>
+        <option value="Tablet">Tablet</option>
+        <option value="Consola">Consola</option>
+    </select>
+
+    <label for="hours">8. ¿Cuántas horas a la semana dedicas a jugar rompecabezas en línea?</label>
+    <input type="number" id="hours" name="hours" min="0" required>
+
+    <label for="graphics">9. ¿Qué tan importantes son los gráficos en un juego de rompecabezas para ti?</label>
+    <select id="graphics" name="graphics">
+        <option value="Muy importantes">Muy importantes</option>
+        <option value="Importantes">Importantes</option>
+        <option value="Poco importantes">Poco importantes</option>
+        <option value="Nada importantes">Nada importantes</option>
+    </select>
+
+    <label for="satisfaction">10. ¿Estás satisfecho/a con la variedad de rompecabezas disponibles en línea?</label>
+    <select id="satisfaction" name="satisfaction">
+        <option value="Muy satisfecho/a">Muy satisfecho/a</option>
+        <option value="Satisfecho/a">Satisfecho/a</option>
+        <option value="Neutral">Neutral</option>
+        <option value="Insatisfecho/a">Insatisfecho/a</option>
+        <option value="Muy insatisfecho/a">Muy insatisfecho/a</option>
+    </select>
+
+    <label for="ads">11. ¿Qué tan molesta es la publicidad en los juegos de rompecabezas en línea?</label>
+    <select id="ads" name="ads">
+        <option value="Muy molesta">Muy molesta</option>
+        <option value="Algo molesta">Algo molesta</option>
+        <option value="Poco molesta">Poco molesta</option>
+        <option value="Nada molesta">Nada molesta</option>
+    </select>
+
+    <label for="multiplayer">12. ¿Prefieres jugar rompecabezas solo/a o con otras personas (multijugador)?</label>
+    <select id="multiplayer" name="multiplayer">
+        <option value="Solo/a">Solo/a</option>
+        <option value="Multijugador">Multijugador</option>
+    </select>
+
+    <label for="improvement">13. ¿Qué mejorarías en los juegos de rompecabezas en línea?</label>
+    <textarea id="improvement" name="improvement" rows="4" placeholder="Escribe tu opinión aquí..."></textarea>
+
+    <label for="recommend">14. ¿Recomendarías este juego de rompecabezas a otras personas?</label>
+    <select id="recommend" name="recommend">
+        <option value="Sí">Sí</option>
+        <option value="No">No</option>
+    </select>
+
+    <label for="additional">15. Comentarios adicionales:</label>
+    <textarea id="additional" name="additional" rows="4" placeholder="Escribe tus comentarios aquí..."></textarea>
+
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
